@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>비교(관계) 및 논리 연산자</title>
+</head>
+<body>
+    <script>
+        let num1 = 8, num2 = 5;
+        let result = 0;
+
+        //비교 연산
+        result = (num1 < num2);
+        console.log(result);
+
+        result = (num1 >= num2);
+        console.log(result);
+
+        result = (num1 == num2);
+        console.log(result);
+
+        result = (num1 != num2);
+        console.log(result);
+
+        //논리 연산
+        result = (num1 > num2) && (num1 == num2); //두 항이 모두 참이면 true
+        console.log(result);
+
+        result = (num1 > num2) || (num1 == num2); //두 항 중 하나 이상이 참이면 true
+        console.log(result);
+
+        result = !(num1 > num2); //참이면 false, 거짓이면 true
+        console.log(result);
+
+    </script>
+</body>
+</html>
