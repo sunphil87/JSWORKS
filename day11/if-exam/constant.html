@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>상수 사용</title>
+</head>
+<body>
+    <script>
+        // 입력(변수 선언)
+        // let MONTH = 12;
+        const MONTH = 12; // 상수는 대문자 표기
+
+        // MONTH = 10; 상수는 변경할 수 없음
+
+        console.log(MONTH);
+
+        console.log("1년은 " + MONTH + "달이 있습니다.")
+    
+        const PI = 3.141592;
+
+        var radius = 10;
+
+        radius = 5; // 재할당(변경) 가능
+        // PI = 3.14; 변경 불가
+
+        var cirCum = 0.0; // 둘레
+        var cirArea = 0.0; // 넓이
+        cirCum = 2 * PI * radius;
+        cirArea = PI * radius * radius;
+
+        console.log(cirCum);
+        console.log(cirArea);
+
+
+    </script>
+</body>
+</html>
