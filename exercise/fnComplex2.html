@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>같으면 곱하고 다르면 더하기</title>
+</head>
+<body>
+    <div class="content">
+        <h2>숫자 두개를 입력받아 같으면 곱하고 다르면 더하는 프로그램</h2>
+        <button onclick="fnComplex()">입력 받아 계산하기</button>
+        <hr>
+        <p id="demo"></p>
+    </div>
+    <script>
+        function fnComplex(){
+            let num1 = parseInt(prompt("첫번째 숫자를 입력하세요"));
+            let num2 = parseInt(prompt("두번째 숫자를 입력하세요"));
+
+            if(num1 == num2){
+                document.getElementById("demo").innerHTML = "두 숫자가 같으므로 " + num1 + "의 제곱값은" + num1*num2 + "입니다."
+            }else{
+                document.getElementById("demo").innerHTML = "두 숫자가 다르므로 " + num1 + "과 " + num2 + "의 합 연산값은 " + parseInt(num1+num2) + "입니다."
+            }
+
+        }
+    </script>
+</body>
+</html>

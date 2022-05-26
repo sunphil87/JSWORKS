@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>절대값 구하기 함수</title>
+</head>
+<body>
+    <button type="button" onclick="myAbs(-4)">계산</button>
+    <p id="demo"></p>
+    <script>
+        function myAbs(x){
+            if(x>0){
+                // return x;
+                document.getElementById("demo").innerHTML = x;
+            }else{
+                // return -x;
+                document.getElementById("demo").innerHTML = -x;
+            }
+        }
+        
+
+        // 호출
+
+        // console.log(myAbs(-3));
+    </script>
+
+</body>
+</html>
