@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1부터 10까지 자연수중 홀수 합</title>
+    <script>
+        //1부터 10까지 자연수 중 홀수 배열
+        let num = new Array()
+        let sum = 0;
+        for(let i = 1; i <= 10; i++){
+            if(i % 2 == 1){
+                num.push(i);
+                sum += i;
+            }
+        }
+        num.push(sum);
+        document.write(num.join(' '));
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
