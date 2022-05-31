@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>내장객체</title>
+</head>
+<body>
+    <script>
+        //substring(a,b)
+        //substring(a)
+
+        var str = 'Javascript'
+        console.log(str.substring(4,9));
+        console.log(str.substring(4));
+
+        let animal = "dog cat horse cow"
+        let animailList = animal.split(" ");
+        console.log(animailList);
+        console.log(animailList[0]);
+
+        //split() - 구분기호로 분리되어 배열에 저장된다.
+        let str2 = "Javascript_JQuery_Html_Css"
+        let division = str2.split("_");
+        console.log(division);
+        console.log(division[0]);
+        console.log(division[1]);
+        console.log(division[2]);
+        console.log(division[3]);
+    </script>
+</body>
+</html>

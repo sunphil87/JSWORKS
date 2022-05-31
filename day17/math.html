@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math 객체의 함수</title>
+    <script>
+        console.log(Math.max(20, 10, 100, 1000));
+        console.log(Math.min(20, 10, 100, 1000));
+        console.log(Math.ceil(20.2));
+        console.log(Math.round(20.2));
+        console.log(Math.sqrt(16));
+        console.log(Math.pow(3, 3));
+
+        //절대값
+        console.log(Math.abs(-10));
+
+        //사용자 정의 함수
+        function myAbs(x){
+            if (x < 0) {
+                return -x;
+            } else {
+                return x;
+            }
+        }        
+        //호출
+        console.log(myAbs(-10));
+
+        //거듭제곱 정의
+        function myPow(x, y){
+            let num = 1;
+            for(let i = 0; i < y; i++){
+                num *= x;
+            }
+            return num;
+        }
+        //호출
+        console.log(myPow(2, 3));
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

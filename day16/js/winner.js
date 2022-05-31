@@ -22,6 +22,19 @@ for(var i = 0; i < winner.length; i++){
         }
     }
 }
+
+/*
+i=0; winner[0]=4, j=0, false
+i=1; winner[1]=14, j=0, winner[0]=4, j=1, false
+i=2; winner[2]=11, j=0, winner[0]=4, j=1, winner[1]=14, j=2, false
+i=3; winner[3]=11, j=0, winner[0]=4, j=1, winner[1]=14, j=2, winner[2]=11, j=3, winner[3]=11
+                    i--
+i=3, winner[3]=5, j=0, winner[0]=4, j=1, winner[1]=14, j=2, winner[2]=11, j=3, false
+i=4, winner[3]=18, j=0, winner[0]=4, j=1, winner[1]=14, j=2, winner[2]=11, j=3, winner[3]=5, j=4, false
+*/
+
+
+
 for(var i = 0; i < winner.length; i++){    
     document.write(winner[i] + "번 ");
 }
