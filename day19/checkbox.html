@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkbox 이벤트</title>
+    <script>
+        function check(){
+            document.getElementById("myCheck").checked = true;
+        }
+        function uncheck(){
+            document.getElementById("myCheck").checked = false;
+        }
+    </script>
+</head>
+<body>
+    <div>
+        체크박스 : <input type="checkbox" id="myCheck">        
+        <button onclick="check()">체크하기</button>
+        <button onclick="uncheck()">체크해제</button>
+    </div>
+</body>
+</html>
