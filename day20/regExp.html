@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>정규 표현식</title>
+    <script>
+        let text = "Hello World"
+
+        let pattern1 = new RegExp("Hello")
+        let result = pattern1.test(text)
+        console.log(result)
+
+        let pattern2 = /World/g
+        let result2 = pattern2.test(text)
+        console.log(result2)
+
+        let id = "a123"
+
+        // let regEx = /[0-9A-Za-z]{5}/
+        let regEx = /[0-9A-Za-z]+/  //1개만 일치해도 'true'
+        console.log(regEx.test(id))
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
