@@ -8,23 +8,27 @@
 </head>
 <body>
     <script>
-        //함수 생성 : Hello~ 출력 함수
-        //매개 변수가 없는 함수,return이 없는 함수
+        //함수 생성 -"Hello~ 를 출력하는 함수"
+        //return이 없는 함수
+        //매개변수가 없는 함수
         function sayHello(){
-            document.write("Hello~<br>")
-        }
-        
-        function sayHello2(name){
-            document.write("Hello~ " + name + "<br>")
+            document.write("Hello~<br>");
         }
 
+        //매개변수가 있는 함수
+        function sayHello2(name){
+            document.write("Hello~" + name + '<br>');
+        }
+
+        //호출(메모리에 로드됨)
         sayHello();
         sayHello();
-        sayHello();
-        sayHello();
-        sayHello();
-        sayHello();
-        sayHello2("sunphil");
+
+        //호출
+        sayHello2("정식");
+        sayHello2("미라");
+
+        
     </script>
 </body>
 </html>

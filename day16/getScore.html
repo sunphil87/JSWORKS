@@ -6,14 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>전역 변수와 지역 변수</title>
     <script>
-        let kor = 90;
+         //전역 변수
+        let kor = 90; 
         function getScore(){
             kor = 100;
-            console.log("전역변수 : " + kor);
+            console.log("전역 변수 : " + kor); //100
         }
-        getScore();
-        console.log("전역변수 : " + kor);
 
+        getScore();
+        console.log("전역 변수 : " + kor);  //100
+
+        //지역 변수
         let eng = 90;
         let score = function(){
             let eng = 100;
@@ -21,9 +24,12 @@
         }
 
         //호출
-
         score();
-        console.log("전역변수 : " + eng);
+        console.log("전역 변수 : " + eng);  //90
+
+
+
+
     </script>
 </head>
 <body>

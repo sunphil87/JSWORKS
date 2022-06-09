@@ -8,9 +8,17 @@
     <script>
         window.onload = function(){
             let bt = document.getElementById("bt")
-           bt.addEventListener("click", function(){
+
+            //on을 생략한 속성 적용
+           /* bt.addEventListener("mouseover", function(){
                 console.log("OK");
-           })
+            }) */
+
+            bt.addEventListener("click", view);
+
+            function view(){
+                console.log("OK");
+            }
         }
     </script>
 </head>

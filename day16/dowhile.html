@@ -4,25 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Do~while문</title>
+    <title>do~while문</title>
     <script>
-        //while
-        let i = 1;
-        let sum = 0;
-            // while(i>10){
-            //     console.log(i);
-            //     sum += i;
-            //     i++;
-            // }
-            // console.log(sum);
+       //while문
+       let i = 1;
+       let sum = 0;
+    //    while(i > 10){
+    //        //console.log(i);
+    //        sum += i;
+    //        i++;
+    //    }
+    //    console.log(sum);  //0
 
-        //dow ~ while 문
-        //1번은 실행하고 싶을 때 사용
-        do{
+       //do ~ while문
+       //1번은 실행하고 싶을 때 사용
+       do{
             sum += i;
             i++;
-        }while(i>10);
-        consile.log(sum);
+       }while(i > 10); //false이므로 빠져나감
+       console.log(sum);  //1
     </script>
 </head>
 <body>

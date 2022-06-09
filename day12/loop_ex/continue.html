@@ -8,32 +8,33 @@
 </head>
 <body>
     <script>
-        // 1부터 10까지 자연수 중 1부터 5까지 출력
-        /*for(let i = 1; i <= 10; i++){
-            if(i>5){
-                break;
-            }
-            console.log(i);            
-        }*/
+        /*반복문에서 continue를 만나면 이후 반복되는 부분을 수행하지 않고
+          조건식이나 증감식을 수행함
+        */
 
-        // 1부터 10까지 자연수 중 5,6를 제외한 수 출력
-
-        /*for(let i = 1; i <= 10; i++){
-            if(i == 5 || i == 6){
-                continue; //계속 수행
-            }
-            console.log(i);            
-        }*/
-
-        // 1부터 10까지 자연수 중 1부터 5까지 출력
-
-            for(let i = 1; i <= 10; i++){
-            if(i > 5){
-                continue; //실행하지 않고 조건식이나 증감식을 계속 수행
-            }
-            console.log(i);            
+        //1부터 10까지 자연수 중 1부터 5까지 출력(break)
+        for(let i = 1; i <= 10; i++){
+            if(i > 5)
+                break;   //빠져 나옴
+            console.log(i);
         }
+        console.log("======")
 
+        //1부터 10까지 자연수 중 5를 제외한 수 출력(continue)
+        for(let i = 1; i <= 10; i++){
+            if(i == 5)
+                continue;  //계속 수행
+            console.log(i);
+        }
+        console.log("======")
+
+        //1부터 10까지 자연수 중 1부터 5까지 출력(continue)
+        for(let i = 1; i <= 10; i++){
+            if(i > 5)
+                continue;   //빠져 나옴
+            console.log(i);
+        }
     </script>
+
 </body>
 </html>

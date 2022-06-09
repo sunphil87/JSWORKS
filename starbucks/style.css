@@ -10,31 +10,32 @@ section{
 }
 section h1{
     font-size: 6em;
-    color: #fff;
+    color: white;
     width: 300px;
     position: absolute;
     top: 80px; left: 400px;
+    z-index: 10;
     animation: slideIn 1s ease-out;
 }
 
 @keyframes slideIn {
     from{
         left: -100px;
-        opacity: 0; /*투명*/
+        opacity: 0;  /*투명*/
     }
     to{
         left: 400px;
-        opacity: 1; /*불투명*/
+        opacity: 1;  /*불투명*/
     }
 }
 
 @keyframes slideOut {
     from{
         left: 400px;
-        opacity: 1; /*불투명*/
+        opacity: 1; 
     }
     to{
         left: -100px;
-        opacity: 0; /*투명*/
+        opacity: 0;
     }
 }

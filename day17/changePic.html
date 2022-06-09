@@ -5,35 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>이벤트 함수</title>
+    <script>
+        function changePic(){
+            let pic = document.querySelector("#pic");
+            pic.src = "images/cup-2.png";
+        }
+    </script>
 </head>
 <body>
+    <!-- 태그의 onclick 속성으로 이벤트 구현 -->
     <div>
-        <img src="./img/cup-1.png" onclick="chagePic()" alt="red" id="pic">
+        <img src="./images/cup-1.png" onclick="changePic()" 
+             id="pic" alt="붉은색 찻잔">
     </div>
-    <script>
-        window. onload = function(){
-            let pic = document.getElementById("pic");
-            
-    //     }
-    
-    // pic.onclick = chagnePic;
-    // function chagnePic(){
-    //     pic.src = "./img/cup-2.png"
-
-        //실행 함수(toggle 방식)
-        let sw = false; // sw변수는 상태를 저장
-        pic.onclick = function(){
-            if(sw == false){
-                pic.src = "./img/cup-2.png";
-                sw = true;
-            }else{
-                pic.src = "./img/cup-1.png";
-                sw = false;
-            }
-        }
-    }
-    
-    </script>
-
 </body>
 </html>

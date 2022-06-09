@@ -1,14 +1,22 @@
 .menu{width: 450px;}
-ul{list-style: none;
-    margin-left: 25px;
+ul{
+    list-style: none;
+    margin-left: 30px;
 }
-ul li{display: inline-block; 
-    border: 1px solid #ccc;
+ul li{
+    display: inline-block;
     margin: 10px;
+    border: 1px solid #ccc;
     padding: 10px 30px;
 }
 ul li a{
     text-decoration: none;
-    color: black;
+    color: #000;
 }
-.box{width: 400px; height: 300px; border: 1px solid #ccc; margin-left: 50px; border-radius: 10px;}
+.box{
+    width: 400px;
+    height: 300px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-left: 50px;
+}

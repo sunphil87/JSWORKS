@@ -8,26 +8,36 @@
 </head>
 <body>
     <script>
-        // number() 함수
-        let n1 = Number("10a");
-        console.log(n1);
+        /*
+            형변환(type conversion)
+            문자형 -> 숫자형 : 
+            - Number(문자) : 정수, 실수
+            - parseInt(문자) : 정수
+            - parseFloat(문자) : 실수
 
-        let n2 = Number("3.141592");
-        console.log(n2);
+            숫자형 -> 문자형
+            - toString(숫자) : 문자
+        */
+        //Number() 함수
+        let n1 = Number("10");
+        console.log(n1); 
 
-        // parseInt() 함수
+        let n2 = Number("2.54");
+        console.log(n2)
+
+        //parseInt() - 10 or 10a도 가능
         let n3 = parseInt("10a");
         console.log(n3);
 
-        // parseFloat()함수
-        let n4 = parseFloat("3.141592");
+        //parseFloat()
+        let n4 = parseFloat("2.54");
         console.log(n4);
 
-        // toString() 함수
-        let val1 = "100";
-        let val2 = "1";
+        //toString() 
+        let val1 = 100;
+        let val2 = 1;
         let str = val1.toString() + val2.toString();
-        console.log(str);
+        console.log(str);  //1001
     </script>
 </body>
 </html>

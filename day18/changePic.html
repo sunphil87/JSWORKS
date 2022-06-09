@@ -8,18 +8,18 @@
 </head>
 <body>
     <div>
-        <img src="./img/cup-1.png" alt="컵1" id="pic">
+        <img src="./images/cup-1.png" id="pic" alt="찻잔">
     </div>
 
     <script>
         let pic = document.getElementById("pic");
+        // let pic = document.querySelector("#pic");
 
-        // document.getElementById("pic");
         pic.onclick = function(){
-            setTimeout(function(){
-                pic.src = "./img/cup-2.png";
-            }, 1000);
 
+            setTimeout(function(){
+                pic.src = "./images/cup-2.png";
+            }, 1000)
         }
     </script>
 </body>

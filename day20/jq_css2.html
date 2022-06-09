@@ -4,10 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>제이쿼리 -css()</title>
-    <style>
-        *{margin: 5px;}
-    </style>
+    <title>제이쿼리 - css()</title>
     <script src="./js/jquery-3.6.0.js"></script>
     <script>
         $(document).ready(function() {
@@ -19,13 +16,12 @@
             $("#visual + #content").css("border", "4px solid navy");
             $("#visual ~ #footer").css("border", "4px solid purple");
             $("div.util").css("border", "4px solid pink");
-            $(".left,.right,#banner").css("border", "4px solid gray");
-        })
+            $(".left,.right, #banner").css("border", "4px solid gray");
+        });
     </script>
-
 </head>
 <body>
-    <header id="header">
+     <header id="header">
         <div class="logo">로고</div>
         <div class="util">회원가입</div>
         <nav id="gnb">

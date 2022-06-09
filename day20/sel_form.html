@@ -11,7 +11,7 @@
             $("input:text").css("background", "red");
             $("input:password").css("background", "orange");
             $(":button").css("background", "yellow");
-            $("input:checked + label").css("background", "green");
+            $(":input:checked + label").css("background", "green");
             $("option:selected").css("color", "blue");
             $("textarea:disabled").css("background", "pink");
         })
@@ -21,12 +21,15 @@
     <div><input type="text"></div>
     <div><input type="password"></div>
     <div><button>확인</button></div>
-    <div><input type="checkbox" id="css" checked><label for="css">css</label></div>
+    <div>
+        <input type="checkbox" id="css" checked="checked">
+        <label for="css">css</label>
+    </div>
     <div>
         <select>
             <option>과목선택</option>
             <option>javascript</option>
-            <option selected="selected">jQuery</option>
+            <option selected>jQuery</option>
         </select>
         <textarea cols="20" rows="5" disabled>javascript</textarea>
     </div>

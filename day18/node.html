@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>노드 추가</title>
+    <title>node 추가하기</title>
     <script>
         function myFunction(){
-            let newItem = document.createElement("li");
-            let textNode = document.createTextNode("Water")
-            newItem.appendChild(textNode);
-            // <li>water</li>
-            let list = document.getElementById("myList");
-            list.insertBefore(newItem, list.childNodes[2])  //맨위, 중간에 넣기
-            // list.appendChild(newItem); //마지막에 넣기
+           let newItem = document.createElement("li");
+           let textNode = document.createTextNode("Water");
+           newItem.appendChild(textNode);  //li에 water를 연결
+            //<li>Water</li>
+        
+           let list = document.getElementById("myList");
+            //list.insertBefore(newItem, list.childNodes[0]); //맨위
+           list.appendChild(newItem);  //li태그를 ul에 추가
         }
     </script>
 </head>
@@ -22,9 +23,8 @@
         <li>Coffee</li>
         <li>Tea</li>
     </ul>
-        <p>Click the button to insert an item to the list</p>
-        
-        <button onclick="myFunction(); this.onclick=''">Try it</button>  <!-- this.onclick='' 은 1번만 실행되도록 함 -->
-
+    <p>Click the button to insert an item to the list</p>
+    <!-- this.onclick=''은 myFunction()이 한번 실행되도록함 -->
+    <button onclick="myFunction(); this.onclick=''">Try It</button>
 </body>
 </html>

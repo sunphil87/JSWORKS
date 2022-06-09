@@ -10,21 +10,24 @@
             margin-top: 50px;
             text-align: center;
         }
-        button{font-size: 1.5em;}
-        p{font-size: 15em;}
+        button{font-size: 1.2em;}
+        p{font-size: 1.5em; color: #00f}
     </style>
 </head>
 <body>
     <button onclick="throwDice()">주사위</button>
     <p id="display"></p>
+
     <script>
         function throwDice(){
-            let dice = Math.floor(Math.random() * 6) + 1;
-            document.getElementById("display").innerHTML = dice;
+            let dice = Math.floor(Math.random()*6) + 1;
+            //객체.함수.속성
+            //document.getElementById("display").innerHTML = dice;
+        
+            //선택자가 id나 클래스 모두 되는 함수
+            document.querySelector("#display").innerHTML = dice;
+        
         }
-        //선택자가 id나 class 모두 되는 함수
-        // document.querySelector("#display").innerHTML = dice;
     </script>
-    
 </body>
 </html>

@@ -1,13 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Checkbox 이벤트</title>
+    <title>checkbox 이벤트</title>
     <script>
+        //checked 속성 사용
         function check(){
             document.getElementById("myCheck").checked = true;
         }
+        //함수이름은 대,소문자 허용 안함
         function uncheck(){
             document.getElementById("myCheck").checked = false;
         }
@@ -15,9 +17,9 @@
 </head>
 <body>
     <div>
-        체크박스 : <input type="checkbox" id="myCheck">        
-        <button onclick="check()">체크하기</button>
-        <button onclick="uncheck()">체크해제</button>
+        Checkbox : <input type="checkbox" id="myCheck">
+        <button onclick="check()">Check Checkbox</button>
+        <button onclick="uncheck()">Uncheck Checkbox</button>
     </div>
 </body>
 </html>

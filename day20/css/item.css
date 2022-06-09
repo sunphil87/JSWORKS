@@ -1,15 +1,16 @@
+/* form 스타일 */
 #wrapper{width: 600px; margin: 0 auto;}
 h2{text-align: center;}
 form{background: #0094ff; padding: 30px 40px;}
 input{width: 420px; padding: 10px;}
 .btnAdd{width: 60px; padding: 10px;}
-
-ul{margin: 0; padding: 0;}
+/* itemList 스타일 */
+ul{margin:0; padding: 0;}
 ul li{
     list-style: none;
     padding: 10px 10px 10px 40px;
     background: #eee;
-    position: relative;
+    position: relative;  /*부모 기준*/
 }
 ul li:hover{background: #ddd;}
 .close{
@@ -17,4 +18,4 @@ ul li:hover{background: #ddd;}
     top: 0; right: 0;
     padding: 10px 20px;
 }
-.close:hover{background: rgb(30,100,200); color: #fff;}
+.close:hover{background: rgb(30, 100, 200); color: #fff;}

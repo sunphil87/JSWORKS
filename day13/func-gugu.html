@@ -8,16 +8,15 @@
 </head>
 <body>
     <script>
-        // 구구단을 출력하는 함수(3단)
-        function printGugu(dan){
+        //구구단을 출력하는 함수(3단)
+        function printGugu(x){
             for(let i = 1; i <= 9; i++){
-            document.write(dan + " X " + i + " =" + (dan*i) + "<br>");
+                document.write(x + "x" + i + "=" + (x*i) + "<br>");
+            }
         }
-        }
 
-        printGugu(parseInt(prompt("구구단의 단을 입력하세요", "2~9")));
-
-
+        printGugu(7);
+        
     </script>
 </body>
 </html>

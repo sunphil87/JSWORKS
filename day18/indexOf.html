@@ -4,21 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>간단한 검색 구현 indexOf() 함수</title>
+    <title>간단 검색 구현</title>
     <script>
-        //반복 조건문 - 간단한 검색 구현 indexOf() 함수
+        //반복 조건문
         while(true){
-            let input = "잘가"
+            let input = prompt("단어를 입력하세요", "");
+
             if(input.indexOf("안녕") >= 0){  //일치하면 0번 인덱스 이상
                 alert("안녕하세요");
-                break;
+                
             }
-            else if(input.indexOf("시") >= 0 || input. indexOf("분") >= 0){
+            else if(input.indexOf("시") >= 0 || input.indexOf("분") >= 0){
                 const date = new Date();
                 let hours = date.getHours();
                 let minutes = date.getMinutes();
-                alert("현재 시각은 " + hours + "시 " + minutes + "분 입니다.")
-                break;
+
+                alert("현재 시각은 " + hours + "시 " + minutes + "분 입니다.");
             }
             else if(input.indexOf("잘가") >= 0 || input.indexOf("잘 가") >= 0){
                 alert("안녕히 가세요");
@@ -28,11 +29,9 @@
                 alert("모르는 단어입니다.");
             }
         }
-            
-        
     </script>
 </head>
 <body>
-
+    
 </body>
 </html>

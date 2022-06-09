@@ -6,44 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>지나온 날짜 계산하기</title>
     <style>
-        #container{width: 300px; height: 300px; border: 2px solid #222;
+        #container{
+            width: 300px; height: 300px;
             margin: 50px auto;
+            border: 2px solid #222;
             border-radius: 50%;
-            background: #00f;
-            color: #fff;
-            position: relative;            
+            background: rgb(210, 218, 230);
+            position: relative;
         }
-        h2{
-            position: absolute;
-            top: 60px;
-            left: 60px;
-        }
-        .p1{
-            position: absolute;
-            top: 120px;
-            left: 45px;
-        }
-        .p2{
-            position: absolute;
-            top: 170px;
-            left: 45px;
-        }
-        .day{
-            font-size: 2em;
-            color: rgb(224, 224, 224);
-            font-weight: bold;
-        }
+        h2{position: absolute; left: 60px; top: 60px;}
+        .p1{position: absolute; left: 50px; top: 120px;}
+        .p2{position: absolute; left: 50px; top: 160px; color: crimson;}
+        .day{font-size: 1.5em; color: crimson; font-weight: bold}
     </style>
 </head>
 <body>
     <div id="container">
         <h2>지금까지 몇 일?</h2>
         <p class="p1">개강 이후 <span id="day" class="day"></span>일 지났습니다.</p>
-        <p class="p2">축하합니다.</p>
+        <p class="p2">축하합니다!!</p>
     </div>
 
     <script>
-        let today = new Date(); // 오늘 날짜
+        let today = new Date();  //오늘 날짜
         let firstDay = new Date(2022, 5-1, 9);
 
         console.log(today.getTime());
@@ -51,13 +36,12 @@
 
         let passedTime = today.getTime() - firstDay.getTime();
 
-        //일로 환산
-
+        //일로 환산(24시간*60분*60초*1000)
         passedTime = Math.round(passedTime/(1000*24*60*60));
-
         console.log(passedTime);
 
-        document.getElementById("day").innerHTML = passedTime
+        document.getElementById("day").innerHTML = passedTime;
+
     </script>
 </body>
 </html>

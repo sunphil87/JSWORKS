@@ -7,7 +7,8 @@
     <title>요소 생성</title>
     <style>
         div{
-            position: fixed;
+            /* position: fixed; */
+            position: absolute;
             left: 100px;
             top: 10px;
             width: 200px;
@@ -16,22 +17,28 @@
         }
     </style>
     <script>
+        // window.onload = function(){
         function createEle(){
-            var bt = document.getElementById('bt');
+            let bt = document.getElementById("bt");
             function popup(){
-                var div = document.createElement('div');
-                var p = document.createElement('p');
-                var txt = document.createTextNode('자바스크립트');
+                let div = document.createElement("div");
+                let p = document.createElement("p");
+                let txt = document.createTextNode("자바스크립트");
                 p.appendChild(txt);
                 div.appendChild(p);
                 document.body.appendChild(div);
+                // document.getElementById("add").appendChild(div);
             }
             bt.onclick = popup;
         }
-        addEventListener('load', createEle);
+        addEventListener("load", createEle);
+        // }
     </script>
 </head>
 <body>
-    <button id="bt">요소생성</button>
+    <button id="bt">요소 생성</button>
+    <!-- <div>
+        <p>자바스트립트</p>
+    </div> -->
 </body>
 </html>

@@ -6,21 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>정규 표현식</title>
     <script>
-        let text = "Hello World"
+        //문자열의 일치 여부 - test() 함수
+        //방법1 - /표현식/
+        //방법2 - RegExp(표현식) 함수 사용
 
-        let pattern1 = new RegExp("Hello")
-        let result = pattern1.test(text)
-        console.log(result)
+        let text = "Hello World!";
 
-        let pattern2 = /World/g
-        let result2 = pattern2.test(text)
+        //1.
+        let pat1 = /world/g;  //표현식
+        let result = pat1.test(text);  //true, false
+        console.log(result);
+
+        //2
+        let pat2 = new RegExp("Hello");
+        let result2 = pat2.test(text);
         console.log(result2)
 
-        let id = "a123"
+        //문자열 및 글자수 일치 여부
+        let id = "a123";
 
-        // let regEx = /[0-9A-Za-z]{5}/
-        let regEx = /[0-9A-Za-z]+/  //1개만 일치해도 'true'
-        console.log(regEx.test(id))
+        //let regEx1 = /[0-9A-Za-z]{5}/; //'a123' 를 찾음(개수 일치)
+        //let regEx2 = /[0-9A-Z]/;  //일치하는 1개 찾음
+        let regEx3 = /[0-9A-Z]+/;   //모두 문자를 찾음
+        //console.log(regEx1);
+        console.log(regEx3.test(id));
     </script>
 </head>
 <body>

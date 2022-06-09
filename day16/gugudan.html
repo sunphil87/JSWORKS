@@ -10,23 +10,22 @@
             border: 1px solid #aaa;
             border-collapse: collapse;
             padding: 10px;
-
         }
     </style>
     <script>
-        let table = "<table>"
-        /*for(let i = 2; i<=9; i++){
+        let table = "<table>";
+        /*for(let i = 2; i <= 9; i++){
             table += "<tr>";
-            for(let j = 1; j<=9; j++){
-                table += "<td>" + i + " X " + j + " = " + (i*j);
-            } 
+            for(let j = 1; j <= 9; j++){
+                table += "<td>" + i + "x" + j + "=" + (i * j) + "</td>";
+            }
             table += "</tr>";
         }*/
-        for(let i = 1; i<=9; i++){
+        for(let i = 1; i <= 9; i++){
             table += "<tr>";
-            for(let j = 2; j<=9; j++){
-                table += "<td>" + j + " X " + i + " = " + (i*j);
-            } 
+            for(let j = 2; j <= 9; j++){
+                table += "<td>" + j + "x" + i + "=" + (j * i) + "</td>";
+            }
             table += "</tr>";
         }
         table += "</table>";
